@@ -10,6 +10,7 @@ env:
   ENCODED_PIPELINE_SECRET: ${{secrets.REACTTYPESCRIPTAPP20240404_WEBAPPDEV_APP_7CEA830_ENV_1EAAE4B}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
   DEPLOY_STEP_SHOULD_DEPLOY: 'false'
+  key1: val1
 jobs:
   code-scan:
     name: Code Scan
